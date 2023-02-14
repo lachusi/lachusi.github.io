@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+
+html {
+	min-height: 100%;
+	position: relative;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	margin: 0 0 250px;
+	margin-top: 120px;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 42px;
+	text-align: justify;
+	background: linear-gradient(#ffffff 30%, #accaeb);
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.wasistdastext {
+	float:left;
+	text-align: left;
+	font-size: 32px;
+	margin-left: 15px;
+	margin-bottom: 100px;
+	color: #043370;
+
+}
+
+/* Überschriften */
+.welcome {
+	text-align: left;
+	display: flex;
+	width: fit-content;
+	font-size: 38px; 
+	font-family: Arial, Helvetica, sans-serif;
+	color: #043370;
+	padding: 1rem;
+	border-radius: 0;
+	margin-top: 60px;
+}
+
+.infobox {
+	width: 2175px;  
+	margin-left: 15px;
+	margin-bottom: 50px;
+	float: left;
+  }
+
+.nurinfo {
+  display:inline-block;
+  width:20%;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  padding:1em;
+  line-height:1.5em;
+  background:rgb(226, 223, 205);
+}
+
+#striche {
+	border:dashed 5px #043370;
+
+}
+
+.bodytext {
+	float: left;
+	text-align: left;
+	font-size: 28px;
+	margin-left: 15px;
+	margin-bottom: 100px;
+	margin-top: 50px;
+	color: #043370;
+
+}
+
+.imptext {
+	text-align: left;
+	font-size: 16px;
+	margin-left: 15px;
+	margin-bottom: 15px;
+	color: #043370;
+	flex: 1 1 auto;
+}
+
+.imptext h1 {
+	text-decoration: underline;
+
+}
+
+.dattext {
+	text-align: left;
+	font-size: 16px;
+	margin-left: 15px;
+	color: #043370;
+}
+
+.dattext h1 {
+	text-decoration: underline;
+}
+
+.dattext a {
+	color: #ff0000;
+	text-decoration: none;
+}
+
+.dattext a:hover {
+	text-shadow: 0.5px 0.5px #000000;
+	text-decoration: none;
+
+}
+
+.mail {
+	color: #ff0000;
+
+}
+
+.mail:hover {
+	text-decoration: underline;
+
+}
+
+/* die Navgiationsleiste in einer Box mit dem Logo */
+.navigation {
+	width: 100%;
+	z-index: 999;
+	position: fixed;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: auto;
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+	background-image: linear-gradient(#accaeb 20%, #ffffff 80%) ;
+	overflow: hidden;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.punkte {
+	display: list-item;
+	list-style-type: circle;
+	text-align: left;
+	margin-top: 12px;
+	margin-left: 15px;
+}
+
+.aufzaehlung {
+	text-align: left;
+}
+
+.mitbringen {
+	text-decoration: underline;
+
+}
+
+/* Dropdown Menü */
+ul {
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+ul li {
+	width: 220px;
+	display: inline-block;
+	position: relative;
+	line-height: 21px;
+	text-align: left;
+	text-decoration: none;
+}
+
+ul li a {
+	display: block;
+	padding: 15px 20px;
+	color: #043370;
+	text-decoration: none;
+}
+
+ul li a:hover{
+	color: #fff;
+	background: #043370;
+	text-decoration: none;
+}
+
+ul li ul.dropdown{
+	max-width: 100%; /* Set width of the dropdown */
+	background: #daebff;
+	display: none;
+	position: fixed;
+	z-index: 999;
+	text-decoration: none;
+}
+ul li:hover ul.dropdown{
+	display: block;	/* Display the dropdown */
+	text-decoration: none;
+	
+}
+
+ul li ul.dropdown li{
+	display: block;
+	text-decoration: none;
+}
+
+.schnuffeln {
+	width: 50px;
+	height: 30px;
+}
+
+.verein {
+	width: 40px;
+	height: 30px;	
+
+}
+
+.logoimage {
+	width: 90px;
+	height: 90px;
+	margin: 0px;
+}
+
+a {
+	color:#043370;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.footer {
+	padding: 0;
+	position: absolute;
+	margin-top: 100px;
+	margin-left: 25%;
+	width: 50%;
+	height: 50px;
+	text-align: center;
+	vertical-align: baseline;
+}
+
+.footerbox {
+	background: linear-gradient(#0969e7,#043370) ;
+	position: absolute;
+	padding-right: 15px;
+	padding-left: 15px;
+    width: 100%;
+	height: 250px;
+	flex-shrink: 0;
+	bottom: 0;
+}
+
+.social {
+
+	width: fit-content;
+	position: absolute;
+}
+
+.social a {
+
+	width: 25px;
+}
+
+.icon1 {
+	width: 5%;
+	height: 5%;
+}
+
+.icon2 {
+	width: 5%;
+	height: 5%;
+	margin-left: -15px;
+}
+
+/* Links im Footer */
+.f-link {
+	margin-left: 50px;
+	color: #daebff;
+}
+
+.f-link:hover {
+	color: #ff0000;
+	text-decoration: none;
+	text-shadow: 1.5px 1.5px #000000;
+
+}
+
+/* "." vor loader zum aktivieren */
+loader {
+	left: 0;
+	top: 0;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: #ffffff url(2pfoten25.png) no-repeat center;
+	opacity: 0.6;
+	z-index: 999;
+}
+
+
+
+/* dynamischer Text "Mantrailing ist" usw. */
+.text {
+	z-index: 3;
+    position: fixed;
+    color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 34px;
+	font-style: italic;
+	display: flex;
+	margin-left: 150px;
+	left: 0;
+}
+  
+p {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+}
+  
+.word {
+    position: absolute;
+    opacity: 0;
+	margin-left: 10px;
+	white-space: pre;
+}
+  
+.letter {
+    display: inline-block;
+    position: relative;
+    transform: translateZ(25px);
+    transform-origin: 50% 50% 25px;
+}
+  
+.letter.out {
+    transform: rotateX(90deg);
+    transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+  
+.letter.behind {
+    transform: rotateX(-90deg);
+}
+  
+.letter.in {
+    transform: rotateX(0deg);
+    transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+ 
+.mantrailing {
+	color:#006eff;
+	text-shadow: 1.5px 1.5px #000000;
+}
+
+
+.wisteria {
+    color: #2473db;
+	text-shadow: 1.5px 1.5px #000000;
+}
+  
+.belize {
+    color: #254977;
+	text-shadow: 1.5px 1.5px #000000;
+}
+  
+.pomegranate {
+    color: #67a7fc;
+	text-shadow: 1.5px 1.5px #000000;
+}
+  
+.green {
+    color: #006eff;
+	text-shadow: 1.5px 1.5px #000000;
+}
+  
+.midnight {
+    color: #0e2c53;
+	text-shadow: 1.5px 1.5px #000000;
+}
+
+/* Bilder Gallerie */
+/* Globals */
+  
+  a {
+	color: currentcolor;
+  }
+  
+  /* Utilities */
+  .auto-grid {
+	display: grid;
+	grid-template-columns: repeat(
+	  auto-fill,
+	  minmax(var(--auto-grid-min-size, 14rem), 1fr)
+	);
+	grid-gap: var(--auto-grid-gap, 0);
+	padding: 0;
+  }
+  
+  .flow > * + * {
+	margin-top: var(--flow-space, 1em);
+	margin-top: 20px;
+  }
+  
+  /* Composition */
+  .team {
+	--flow-space: 2em;
+  }
+  
+  /* Blocks */
+  .profile {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	aspect-ratio: 1/1.55;
+	position: relative;
+	padding: 1.5rem;
+	color: #ffffff;
+	backface-visibility: hidden;
+	text-decoration: none;
+	overflow: hidden;
+  }
+  
+  .profile::before,
+  .profile::after {
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	/*inset: 0;*/
+	top: 0;
+	left: 0;
+  }
+  
+  .profile::before {
+	background: linear-gradient(
+	  to top,
+	  hsl(0 0% 0% / 0.79) 0%,
+	  hsl(0 0% 0% / 0.787) 7.8%,
+	  hsl(0 0% 0% / 0.779) 14.4%,
+	  hsl(0 0% 0% / 0.765) 20.2%,
+	  hsl(0 0% 0% / 0.744) 25.3%,
+	  hsl(0 0% 0% / 0.717) 29.9%,
+	  hsl(0 0% 0% / 0.683) 34.3%,
+	  hsl(0 0% 0% / 0.641) 38.7%,
+	  hsl(0 0% 0% / 0.592) 43.3%,
+	  hsl(0 0% 0% / 0.534) 48.4%,
+	  hsl(0 0% 0% / 0.468) 54.1%,
+	  hsl(0 0% 0% / 0.393) 60.6%,
+	  hsl(0 0% 0% / 0.31) 68.3%,
+	  hsl(0 0% 0% / 0.216) 77.3%,
+	  hsl(0 0% 0% / 0.113) 87.7%,
+	  hsl(0 0% 0% / 0) 100%
+	);
+	transition: 300ms opacity linear;
+  }
+  
+  .profile::after {
+	background: linear-gradient(
+	  45deg,
+	  rgba(255, 255, 255, 0.7) 0,
+	  rgb(6, 91, 202) 100%
+	);
+	opacity: 0;
+	transition: 300ms opacity linear;
+  }
+  
+  .profile > * {
+	z-index: 1;
+  }
+  
+  .profile img {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+	z-index: -1;
+	object-fit: cover;
+	filter: grayscale(1);
+	transition: filter 200ms ease, transform 250ms linear;
+  }
+  
+  .profile h2,
+  .profile p {
+	transform: translateY(2ex);
+  }
+  
+  .profile h2 {
+	font-size: 1.5rem;
+	line-height: 1.2;
+	font-weight: 900;
+	letter-spacing: 0.03ch;
+	transition: 300ms transform ease;
+  }
+  .profile span {
+	font-size: 1rem;
+	line-height: 1.2;
+	font-weight: 900;
+	letter-spacing: 0.03ch;
+	transition: 300ms transform ease;
+  }
+  
+  .profile p {
+	font-size: 1.2rem;
+	font-weight: 500;
+  }
+  
+  .profile p {
+	opacity: 0;
+	transition: 300ms opacity linear, 300ms transform ease-in-out;
+  }
+  
+  .profile:focus {
+	outline: 0.5rem solid rgb(231, 7, 7);
+	outline-offset: -0.5rem;
+  }
+  
+  .profile:hover :is(h2, p),
+  .profile:focus :is(h2, p) {
+	transform: none;
+  }
+  
+  .profile:hover::after,
+  .profile:focus::after,
+  .profile:hover::before,
+  .profile:focus::before {
+	opacity: 0.5;
+  }
+  
+  .profile:hover p,
+  .profile:focus p {
+	opacity: 0.7;
+	transition-delay: 200ms;
+  }
+  
+  .profile:hover img,
+  .profile:focus img {
+	filter: grayscale(50%);
+	transform: scale(1.05) rotate(1deg);
+  }
+  /* Bilder Gallerie Ende */
